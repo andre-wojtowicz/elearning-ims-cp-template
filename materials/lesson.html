@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Lesson 1</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+	<link href="css/shCore.css" rel="stylesheet" type="text/css" />
+	<link href="css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+    <!--[if !IE]> -->
+    <script src="js/jquery.min.js"></script>
+	<!-- <![endif]-->
+	<!--[if IE]>
+		<script src="js/jquery-1.11.3.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/sh/shCore.js"></script>
+	<script type="text/javascript" src="js/sh/shBrushCpp.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+    
+        <div id="toc"><span class="lead">Table of Contents</span></div>
+
+        <h1>Sample lesson with bootstrap CSS</h1>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel test</h3>
+            </div>
+            <div class="panel-body">
+                Sample panel content
+            </div>
+        </div>
+
+        <h2>Polish diacritical marks</h2>
+        
+        <p>Ą, Ć, Ę, Ł, Ń, Ó, Ś, Ź, Ż, ą, ć, ę, ł, ń, ó, ś, ź, ż.</p>
+        
+        <h2>Image</h2>
+
+        <img src="img/cat_reasonably_small.jpg" alt="cat reasonably small" />
+
+        <h2>Sample paragraph</h2>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis quis neque nec pharetra. Aenean sollicitudin nisi quis euismod viverra. Ut cursus risus sit amet metus faucibus, sed sodales eros vehicula. Donec sagittis urna finibus tristique eleifend. Fusce eu metus aliquet neque fringilla congue nec id nunc.</p>
+        
+        <div class="alert alert-danger" role="alert">
+            <strong>Sample alert!</strong> Sample message.
+        </div>
+        
+        <h3>MathJax example</h3>
+        
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {
+                  inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                  processEscapes: true
+                }
+            });
+        </script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+        <div>If $A \in \mathbb{R}^{n \times n}$ and $a_{ij} \geq 0$, then $\displaystyle \min_i \sum_j a_{ij} \varrho(A) \leq \max_i \sum_j a_{ij}$.</div>
+        
+        <h3>Sample table</h3>
+        
+        <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+        </table>
+        
+        <h3>Sample code</h3>
+        
+        <p>Some program:</p>
+        
+    <pre class="brush: cpp; highlight: [3, 9]">#include &lt;iostream&gt;
+
+    int main(int argc, char *argv[]) {
+
+      /* An annoying "Hello World" example */
+      for (auto i = 0; i &lt; 0xFFFF; i++)
+        cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
+
+      char c = '\n';
+      unordered_map &lt;string, vector&lt;string&gt; &gt; m;
+      m["key"] = "\\\\"; // this is an error
+
+      return -2e3 + 12l;
+    }</pre>
+
+        <p>Some comment.</p>
+
+    </div>
+
+    <script>SyntaxHighlighter.all();</script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/auto-toc.js"></script>
+</body>
+</html>

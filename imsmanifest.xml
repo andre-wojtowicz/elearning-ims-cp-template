@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!--
+        Course: ...
+        Author: ...
+     Last edit: ...
+-->
+
+<manifest identifier="pl.edu.amu.wmi.elearning.imscp-example" 
+          version="1"
+          xmlns="http://www.imsglobal.org/xsd/ims_cp_rootv1p1">
+
+  <metadata>
+    <schema>IMS Content</schema>
+    <schemaversion>1.1</schemaversion>
+  </metadata>
+	<organizations default="sample_org">
+		<organization identifier="sample_org">
+			<title>Module</title>
+			<item identifier="item_1" identifierref="resource_1">
+				<title>Lesson</title>
+                <item identifier="item_1_1" identifierref="resource_1_1">
+                    <title>Sublesson (the same)</title>
+                </item>
+			</item>
+            <item identifier="item_2" identifierref="resource_2">
+				<title>Quiz</title>
+			</item>
+		</organization>
+	</organizations>
+	<resources>
+		<resource identifier="resource_1" type="webcontent" href="materials/lesson.html">
+            <file href="materials/lesson.html"/>
+		</resource>
+        <resource identifier="resource_1_1" type="webcontent" href="materials/lesson.html">
+            <file href="materials/lesson.html"/>
+		</resource>
+        <resource identifier="resource_2" type="webcontent" href="materials/quiz.html">
+            <file href="materials/quiz.html"/>
+		</resource>
+	</resources>
+</manifest>
